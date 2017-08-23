@@ -40,7 +40,7 @@ function initEvents() {
     })
 
     $('#btn_submit').click(function() {
-        console.log(key);
+        //console.log(key);
         var note = {
             title: $('#note_title').val(),
             content: $('#note_content').val(),
@@ -52,6 +52,7 @@ function initEvents() {
         $('#note_page').slideUp();
         $('#note_title').val("");
         $('#note_content').val("");
+        $('#btn_place').text("点击定位");
     })
     $('#note_list > ul').on('click', 'li', function() {
         var indexedDB = window.indexedDB;
@@ -70,6 +71,7 @@ function initEvents() {
     })
 
     $('#btn_place').click(function() {
+        $(this).text("定位中。。。");
         var that = $(this);
         var geolocation = new BMap.Geolocation();
         geolocation.getCurrentPosition(function(position) {
