@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.page {
+  width: 400px;
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #eee;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px #ddd;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: skyblue;
+  color: #fff;
+  font-size: 25px;
+
+}
+.header span {
+  margin-left: 130px;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.header span:hover {
+  transform: rotate(90deg);
+}
+.content {
+  width: 100%;
+  height: 490px;
+  overflow: hidden;
+
+}
+.content ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 350px;
+  padding-top: 30px;
+}
+.content ul > li {
+  width: 350px;
+  /*height: 50px;*/
+  line-height: 50px;
+  font-size: 18px;
+  border-bottom: 2px solid skyblue;
+  box-sizing: border-box;
+  padding-left:10px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.content ul > li > div {
+  display: none;
+  width: 320px;
+  /*height: 100px;*/
+  /*background: red;*/
+  border-top: 2px solid skyblue;
+  font-size: 15px;
+  line-height: 25px;
+}
+.content ul > li > span {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+    color: #aaa;
+    font-size: 12px;
+    text-align: right;
+}
+
+.content ul > li:hover {
+  padding-left: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.note-page {
+  display: none;
+}
+.note-list {
+  overflow: auto;
+}
+#note_title {
+  outline: none;
+  width: 350px;
+  height: 30px;
+  margin: 0 25px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: #eee;
+  padding: 0 20px;
+}
+
+#note_content {
+  outline: none;
+  width: 330px;
+  height: 300px;
+  border: none;
+  font-size: 16px;
+  margin: 0 25px;
+  margin-top: 10px;
+  white-space: normal;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.btn {
+  width: 250px;
+  
+  background: #ccc;
+  border: none;
+  margin: 10px 75px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #bbb;
+}
